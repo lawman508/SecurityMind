@@ -1,0 +1,44 @@
+{
+  "title": "Injection\nhttps://www.owasp.org/index.php/Top_10_2013-A1-Injection",
+  "attr": {
+    "style": {
+      "background": "#22AAE0"
+    }
+  },
+  "ideas": {
+    "1": {
+      "title": "SQL Injection\nhttps://www.owasp.org/index.php/SQL_Injection_Prevention_Cheat_Sheet",
+      "id": 18,
+      "attr": {
+        "style": {
+          "background": "#008000"
+        },
+        "progress": "3",
+        "attachment": {
+          "contentType": "text/html",
+          "content": "SQL Injection has been mitigated by only allowing parametrized queries or views from the application tier.<br>Dynamic SQL is not permitted through database authorization rules"
+        }
+      }
+    },
+    "2": {
+      "title": "Command Injection\nhttps://www.owasp.org/index.php/Command_Injection",
+      "id": 19,
+      "attr": {
+        "style": {
+          "background": "#E0E0E0"
+        }
+      }
+    },
+    "3": {
+      "title": "LDAP Injection\nhttps://www.owasp.org/index.php/LDAP_injection",
+      "id": 20,
+      "attr": {
+        "style": {
+          "background": "#E0E0E0"
+        }
+      }
+    }
+  },
+  "id": 17,
+  "formatVersion": 2
+}
