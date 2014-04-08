@@ -1,0 +1,42 @@
+{
+  "title": "Cross Site Scripting",
+  "id": 1,
+  "formatVersion": 2,
+  "attr": {
+    "attachment": {
+      "contentType": "text/html",
+      "content": "<a target=\"_blank\" href=\"https://www.owasp.org/index.php/Cross-site_Scripting_%28XSS%29\">Cross Site Scripting on OWASP</a><br><p>Cross-site scripting attacks may occur anywhere that possibly \nmalicious users are allowed to post unregulated material to a trusted \nweb site for the consumption of other valid users.\n</p><p>The most common example can be found in bulletin-board web sites which provide web based mailing list-style functionality. \n</p>\n<h3> <span class=\"mw-headline\" id=\"Example_1\">Example 1</span></h3>\n<p>The following JSP code segment reads an employee ID, eid, from an HTTP request and displays it to the user.\n</p>\n<pre>\t&lt;% String eid = request.getParameter(\"eid\");&nbsp;%&gt; \n\t...\n\tEmployee ID: &lt;%= eid&nbsp;%&gt;\n</pre>\n<p>The code in this example operates correctly if eid contains only \nstandard alphanumeric text. If eid has a value that includes \nmeta-characters or source code, then the code will be executed by the \nweb browser as it displays the HTTP response.\n</p><p>Initially this might not appear to be much of a vulnerability. \nAfter all, why would someone enter a URL that causes malicious code to \nrun on their own computer? The real danger is that an attacker will \ncreate the malicious URL, then use e-mail or social engineering tricks \nto lure victims into visiting a link to the URL. When victims click the \nlink, they unwittingly reflect the malicious content through the \nvulnerable web application back to their own computers. This mechanism \nof exploiting vulnerable web applications is known as Reflected XSS.\n</p>"
+    },
+    "style": {
+      "background": "#22AAE0"
+    }
+  },
+  "ideas": {
+    "1": {
+      "title": "ASP.NET",
+      "id": 4,
+      "attr": {
+        "attachment": {
+          "contentType": "text/html",
+          "content": "<a href=\"http://www.codeguru.com/csharp/.net/net_asp/preventing-cross-site-scripting-attacks-in-asp.net-mvc-4.htm\">Prevent XSS Attacks in ASP.NET</a>"
+        },
+        "style": {
+          "background": "#E0E0E0"
+        }
+      }
+    },
+    "-1": {
+      "title": "JavaScript Mitigation",
+      "id": 5,
+      "attr": {
+        "attachment": {
+          "contentType": "text/html",
+          "content": "<a href=\"http://www.ibm.com/developerworks/tivoli/library/s-csscript/index.html\">IBM DeveloperWorks Javascript - best practices for preventing Cross Site Scriptin</a>g"
+        },
+        "style": {
+          "background": "#E0E0E0"
+        }
+      }
+    }
+  }
+}
