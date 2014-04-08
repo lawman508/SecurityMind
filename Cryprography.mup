@@ -1,0 +1,30 @@
+{
+  "title": "Cryprography",
+  "id": 1,
+  "formatVersion": 2,
+  "ideas": {
+    "1": {
+      "title": "PGP",
+      "id": 2,
+      "ideas": {
+        "1": {
+          "title": "GnuPG",
+          "id": 3,
+          "attr": {
+            "attachment": {
+              "contentType": "text/html",
+              "content": "<a href=\"https://wiki.debian.org/Keysigning\"><span style=\"background-color: transparent;\">KeySigning</span></a><br><a class=\"http\" href=\"http://www.gnupg.org/documentation/index.en.html\">Official GPG documentation</a>"
+            },
+            "style": {
+              "background": "#E0E0E0"
+            }
+          }
+        },
+        "2": {
+          "title": "Key Management",
+          "id": 4
+        }
+      }
+    }
+  }
+}
